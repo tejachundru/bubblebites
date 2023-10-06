@@ -36,14 +36,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
-            fontSans.variable
+            "min-h-screen bg-background bg-gradient-to-r from-zinc-50 to-zinc-200 font-sans antialiased dark:from-slate-900 dark:to-slate-700",
+            fontSans.className
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
-              <div className="flex-1">{children}</div>
+              <div className="flex">{children}</div>
             </div>
             <TailwindIndicator />
           </ThemeProvider>
