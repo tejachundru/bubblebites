@@ -1,17 +1,25 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Icons } from "@/components/icons"
+import PageContainer from "@/components/page-container"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <PageContainer>
       <div className="flex flex-col items-center gap-2">
         <Icons.logo />
-        <h1 className="bg-gradient-to-r from-amber-200 to-yellow-400 bg-clip-text text-8xl text-transparent">
-          Bubble Bites
-        </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Restaurant you love
+        <h1 className="color-white bg-clip-text text-8xl ">Bubble Bites</h1>
+        <p className="max-w-[700px] text-3xl text-muted-foreground">
+          Quick Eats, Happy Treats
+        </p>
+
+        <p className="max-w-[700px] text-xl text-muted-foreground">
+          <b>"Welcome to "Bubble Bites"</b> – Where Freshness Reigns!
+        </p>
+        <p className="max-w-[700px] text-center text-lg text-muted-foreground">
+          No Tasting salts/Food Colors, just pure delight. Locally-sourced
+          ingredients, bursting with flavor. Taste the best at "Bubble Bites"!"
         </p>
       </div>
-    </section>
+    </PageContainer>
   )
 }
