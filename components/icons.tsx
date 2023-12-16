@@ -1,4 +1,5 @@
 import {
+  ChevronRight,
   LucideProps,
   Moon,
   SunMedium,
@@ -12,6 +13,7 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
+  chevronRight: ChevronRight,
   logo: (props: LucideProps) => (
     <svg
       version="1.0"
